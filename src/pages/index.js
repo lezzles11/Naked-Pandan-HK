@@ -98,7 +98,11 @@ function Package() {
         <Box />
       </div>{" "}
       <div className="col">
-        <Text color="#00c853" p="Developed with motherly love" />
+        {" "}
+        <br /> <br />
+        <br />
+        <br />
+        <Text color="#00c853" p="baby, take a pandan" />
       </div>
     </div>
   )
@@ -108,7 +112,13 @@ function Endorsed() {
   return (
     <div className="row">
       <div className="col">
-        <Text color="#8bc34a " p="Developed with motherly love" />
+        {" "}
+        <br /> <br /> <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Text color="#8bc34a " p="be there in a pandan" />
       </div>{" "}
       <div className="col">
         <Review />
@@ -124,7 +134,7 @@ function Ingredients() {
         <Sponge />
       </div>{" "}
       <div className="col">
-        <Text color="#a5d6a7" p="Developed with motherly love" />
+        <Text color="#a5d6a7" p="pandan my mind" />
       </div>
     </div>
   )
@@ -137,7 +147,15 @@ function SoftSpongePic() {
         <SoftSponge />
       </div>{" "}
       <div className="col">
-        <Text color="#a5d6a7" p="Developed with motherly love" />
+        {" "}
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Text color="#a5d6a7" p="pandan my mind" />
       </div>
     </div>
   )
@@ -150,6 +168,9 @@ const IndexPage = () => (
     <Package />
     <Endorsed />
     <SoftSpongePic />
+    <br />
+    <br />
+    <br />
   </Layout>
 )
 
