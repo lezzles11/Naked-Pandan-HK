@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import "../components/styles.css"
 import Box from "../components/pictures/Box"
-
+import HundredWidth from "../components/HundredWidth"
 import CloseUp from "../components/pictures/CloseUp"
 
 import DateNightMotherAndSon from "../components/pictures/DateNightMotherAndSon"
@@ -34,9 +34,17 @@ function Text({ p, color }) {
   )
 }
 
+const pictureContainer = {
+  margin: "10",
+  maxWidth: "960",
+}
+
 function FromTopPic() {
   return (
-    <div className="row ">
+    <div
+      style={{ maxWidth: "960px", margin: "0 auto" }}
+      className="pandanContainer row "
+    >
       <div className="col-6">
         <FromTop />
       </div>{" "}
@@ -50,7 +58,10 @@ function FromTopPic() {
 }
 function FromSidePic() {
   return (
-    <div className="row">
+    <div
+      style={{ maxWidth: "960px", margin: "0 auto" }}
+      className="pandanContainer row"
+    >
       <div className="col">
         <br />
         <br />
@@ -70,7 +81,10 @@ function FromSidePic() {
 }
 function TwoCakes() {
   return (
-    <div className="row">
+    <div
+      style={{ maxWidth: "960px", margin: "0 auto" }}
+      className="pandanContainer row"
+    >
       <div className="col">
         <br />
         <br />
@@ -93,7 +107,10 @@ function TwoCakes() {
 
 function Package() {
   return (
-    <div className="row">
+    <div
+      style={{ maxWidth: "960px", margin: "0 auto" }}
+      className="pandanContainer row"
+    >
       <div className="col">
         <Box />
       </div>{" "}
@@ -110,7 +127,10 @@ function Package() {
 
 function Endorsed() {
   return (
-    <div className="row">
+    <div
+      style={{ maxWidth: "960px", margin: "0 auto" }}
+      className="pandanContainer row"
+    >
       <div className="col">
         {" "}
         <br /> <br /> <br />
@@ -129,7 +149,7 @@ function Endorsed() {
 
 function Ingredients() {
   return (
-    <div className="row">
+    <div className="pandanContainer row">
       <div className="col">
         <Sponge />
       </div>{" "}
@@ -142,7 +162,10 @@ function Ingredients() {
 
 function SoftSpongePic() {
   return (
-    <div className="row">
+    <div
+      style={{ maxWidth: "960px", margin: "0 auto" }}
+      className="pandanContainer row"
+    >
       <div className="col">
         <SoftSponge />
       </div>{" "}
@@ -168,6 +191,7 @@ const IndexPage = () => (
     <Package />
     <Endorsed />
     <SoftSpongePic />
+    <HundredWidth />
     <br />
     <br />
     <br />
