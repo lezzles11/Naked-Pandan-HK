@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Naked Pandan HK`,
+    title: `Naked Pandan, Hong Kong`,
     description: `Try out our delicious pandan cake!`,
     author: `@lezzles11`,
   },
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/FromTop.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
