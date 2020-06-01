@@ -4,37 +4,45 @@ const Footer = () => {
   const style = {
     bottom: 0,
   }
+  const stickToBottom = {
+    position: "fixed",
+    left: 0,
+    bottom: 0,
+    right: 0,
+    width: "100%",
+  }
   return (
-    <footer>
-      <div className="row">
-        <div className="col-7"></div>
-        <div className="col-5">
-          {" "}
-          <br />
-          <p style={{ padding: "1px", color: "white" }}>
+    <div style={stickToBottom}>
+      <footer>
+        <div className="row">
+          <div className="col-7"></div>
+          <div className="col-5 row">
             {" "}
-            &nbsp;&nbsp;&nbsp;{" "}
-            <span className=" orange darken-3 container">
-              built during the corona
-            </span>
             <br />
-            {` `}&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            {` `}
-            <span className=" blue accent-4 container">built by lezzles</span>
-            <br />
-            {` `}&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <span className="pink accent-4 container">
-              built with{" "}
-              <a style={{ color: "white" }} href="https://www.gatsbyjs.org">
-                Gatsby
-              </a>
-            </span>
-          </p>
+            <p style={{ padding: "1px", color: "white" }}>
+              {" "}
+              &nbsp;&nbsp;&nbsp;{" "}
+              <span className=" orange darken-3 container">
+                cakes made by Andrew & Mag
+              </span>
+              <br />
+              {` `}&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              {` `}
+              <span className=" blue accent-4 container">
+                site built by lezzles
+              </span>
+              <br />
+              {` `}&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span className="pink accent-4 container">
+                keeping calm during the corona
+              </span>
+            </p>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   )
 }
 
