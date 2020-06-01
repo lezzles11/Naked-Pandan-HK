@@ -12,4 +12,4 @@ const OrderPage = () => {
   )
 }
 
-export default StoryPage
+export default OrderPage
