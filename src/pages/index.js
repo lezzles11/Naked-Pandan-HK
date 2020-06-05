@@ -211,7 +211,6 @@ const IndexPage = () => (
     <Package />
     <Endorsed />
     <SoftSpongePic />
-    <HundredWidth />
     <br />
     <br />
   </Layout>

@@ -29,16 +29,30 @@ const OrderPage = () => {
   return (
     <Layout>
       <div
-        className="row justify-content-center"
+        className=" justify-content-center"
         style={{ maxWidth: "960", margin: "auto" }}
       >
-        <h2 className="font5">Looking to be pandanned?</h2>
+        <div className="row justify-content-center">
+          <h1 style={{ color: "#8bc34a" }} className="font5">
+            <span style={{ color: "#558b2f" }}>Contact</span>
+            <br />
+            Magdelene Teo @
+            <br /> <span style={{ color: "#00c853" }}>+852-90275651 </span>
+            <br />
+            <span style={{ color: "#2e7d32" }}> through WhatsApp</span>
+          </h1>
+        </div>
         <br />
-        <br />{" "}
-        <div className="card">
-          <div className="card-body">
-            <div className="card-title">Contact Magdelene Teo</div>
-          </div>
+
+        <div
+          className="row justify-content-center"
+          style={{ maxWidth: "960", margin: "auto" }}
+        >
+          {" "}
+          <h1 style={{ color: "#8bc34a" }} className="font5">
+            Get ready to be{" "}
+            <span style={{ color: "#2e7d32" }}> pandanned.</span>
+          </h1>
         </div>
       </div>
     </Layout>
