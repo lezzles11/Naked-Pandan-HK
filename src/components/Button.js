@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import { motion } from "framer-motion"
 import "./styles.css"
@@ -5,14 +6,14 @@ const styles = {
   borderRadius: 30,
   width: 150,
   padding: "10px 20px",
-  margin: "auto",
+  margin: "10px",
   color: "#333",
   outline: "none",
   border: "none",
   cursor: "pointer",
 }
 
-export default function Button() {
+function Button({ to, name }) {
   return (
     <motion.button
       className="btn btn-outline-dark waves-effect"
@@ -20,7 +21,17 @@ export default function Button() {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9, x: "-5px", y: "5px" }}
     >
-      Button
+      <Link
+        to={to}
+        className="font5"
+        style={{
+          textDecoration: `none`,
+          color: "black",
+        }}
+      >
+        {name}
+      </Link>
     </motion.button>
   )
 }
+export default Button

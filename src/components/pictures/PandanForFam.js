@@ -12,7 +12,10 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const PandanForFam = () => {
+const PandanForFam = ({ height }) => {
+  const style = {
+    height: `${height}`,
+  }
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "PandanForFam.png" }) {
@@ -25,6 +28,8 @@ const PandanForFam = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <Img style={style} fluid={data.placeholderImage.childImageSharp.fluid} />
+  )
 }
 export default PandanForFam
