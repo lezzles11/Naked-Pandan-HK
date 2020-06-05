@@ -21,6 +21,27 @@ import Button from "../components/Button"
 import OrderPage from "./order"
 import StoryPage from "./story"
 
+import OriginalPandan from "../components/pictures/OriginalPandan"
+
+import PandanToShare from "../components/pictures/PandanToShare"
+
+import PandanForFam from "../components/pictures/PandanForFam"
+
+import PandanByWater from "../components/pictures/PandanByWater"
+
+import PandanWithFriends from "../components/pictures/PandanWithFriends"
+
+function Images() {
+  return (
+    <div>
+      <OriginalPandan />
+      <PandanToShare />
+      <PandanForFam />
+      <PandanByWater />
+      <PandanWithFriends />
+    </div>
+  )
+}
 function Text({ p, color }) {
   const style = {
     color: `${color}`,
@@ -183,9 +204,84 @@ function SoftSpongePic() {
     </div>
   )
 }
+
+function Border() {
+  const style = {
+    borderStyle: "solid",
+    color: "red",
+    height: "100%",
+    width: "100%",
+  }
+  return (
+    <div style={style}>
+      <h1>Border To Show How Things Fit</h1>
+    </div>
+  )
+}
+function TemplateOne() {
+  const margin = {
+    margin: "auto 0",
+  }
+  return (
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-6">
+          <div style={margin} className="row">
+            <Border />
+          </div>
+          <div className="row" style={margin}>
+            <Border />
+          </div>
+          <div className="row">
+            <div className="col">
+              <Border />
+            </div>
+            <div className="col">
+              <div className="row" style={margin}>
+                <Border />
+              </div>
+              <div className="row" style={margin}>
+                <Border />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-6">
+          <Border />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function TemplateTwo() {
+  return (
+    <div className="container-fluid">
+      <h1>Template Two</h1>
+      <div className="row">
+        <div className="col">
+          <Border />
+        </div>
+        <div className="col">
+          <div className="row">
+            <Border />
+          </div>
+          <div className="row">
+            <Border />
+          </div>
+          <div className="row">
+            <Border />
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
 const IndexPage = () => (
   <Layout className="font5">
     <SEO title="Home" />
+    <TemplateOne />
+    <TemplateTwo />
     <FromTopPic />
     <TwoCakes />
     <Package />
@@ -193,6 +289,7 @@ const IndexPage = () => (
     <SoftSpongePic />
     <HundredWidth />
     <br />
+    <Images />
     <br />
     <br />
   </Layout>
