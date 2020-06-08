@@ -47,6 +47,28 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
+    <div className="container-fluid">
+      <br />
+      <div className="row justify-content-end">
+        {" "}
+        <div className="col-1">
+          <Button to="/" name="Home" />
+        </div>
+        <div className="col-1"></div>
+        <div className="col-1">
+          <Button to="/story" name="Our Story" />
+        </div>
+        <div className="col-1"></div>
+        <div className="col-1">
+          <Button to="/order" name="Order" />
+        </div>
+        <div className="col-1"></div>
+        <div className="col-1">
+          <Button to="/login" name="Login" />
+        </div>
+        <div className="col-1"></div>
+      </div>
+    </div>{" "}
     <div className="row justify-content-center">
       <div style={headerStyle} className=" card-body justify-content-center">
         <br />
@@ -64,22 +86,6 @@ const Header = ({ siteTitle }) => (
         </p>
         <br />
         <br />
-      </div>
-    </div>
-    <div className="container">
-      <div className="row justify-content-end ">
-        {" "}
-        <div className="col-1"></div>
-        <div className="col-3">
-          <Button to="/" name="Home" />
-        </div>
-        <div className="col-3">
-          <Button to="story" name="Our Story" />
-        </div>
-        <div className="col-3">
-          <Button to="order" name="Order" />
-        </div>
-        <div className="col-1"></div>
       </div>
     </div>
   </header>

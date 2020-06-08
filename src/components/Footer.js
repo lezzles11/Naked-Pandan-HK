@@ -23,7 +23,7 @@ const Footer = () => {
               {" "}
               &nbsp;&nbsp;&nbsp;{" "}
               <span className=" orange darken-3 container">
-                cakes made by Andrew & Mag
+                cakes made by Mag
               </span>
               <br />
               {` `}&nbsp;&nbsp;
